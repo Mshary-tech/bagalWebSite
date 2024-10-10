@@ -1,0 +1,226 @@
+@font-face {
+    font-family: 'NotoKufiArabic-Black';
+    src:  url('../Noto_Kufi_Arabic/static/NotoKufiArabic-Black.ttf')
+}
+@font-face {
+    font-family: 'NotoKufiArabic-Bold';
+    src:  url('../Noto_Kufi_Arabic/static/NotoKufiArabic-Bold.ttf')
+}
+@font-face {
+    font-family: 'NotoKufiArabic-ExtraBold';
+    src:  url('../Noto_Kufi_Arabic/static/NotoKufiArabic-ExtraBold.ttf')
+}
+@font-face {
+    font-family: 'NotoKufiArabic-ExtraLight';
+    src:  url('../Noto_Kufi_Arabic/static/NotoKufiArabic-ExtraLight.ttf')
+}
+@font-face {
+    font-family: 'NotoKufiArabic-Light';
+    src:  url('../Noto_Kufi_Arabic/static/NotoKufiArabic-Light.ttf')
+}
+@font-face {
+    font-family: 'NotoKufiArabic-Medium';
+    src:  url('../Noto_Kufi_Arabic/static/NotoKufiArabic-Medium.ttf')
+}
+@font-face {
+    font-family: 'NotoKufiArabic-Regular';
+    src:  url('../Noto_Kufi_Arabic/static/NotoKufiArabic-Regular.ttf')
+}
+@font-face {
+    font-family: 'NotoKufiArabic-SemiBold';
+    src:  url('../Noto_Kufi_Arabic/static/NotoKufiArabic-SemiBold.ttf')
+}
+@font-face {
+    font-family: 'NotoKufiArabic-Thin';
+    src:  url('../Noto_Kufi_Arabic/static/NotoKufiArabic-Thin.ttf')
+}
+
+* {
+    margin: 0px;
+}
+body{
+    padding: 0px;
+    margin:  0px;
+    background-color: #f5f5f5;
+}
+
+.header{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0px 30px 100px; */
+    /* padding-bottom: 100px; */
+
+}
+
+.nav{
+    position: relative;
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 0px;
+    font-family: 'NotoKufiArabic-Bold';
+    z-index: 1;
+}
+.bagala-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5252E4;
+    width: 75px;
+    height: 75px;
+    border-radius: 15px;
+}
+.nav-menu{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    font-family: 'NotoKufiArabic-Regular';
+    font-style: normal;
+    font-size: 20px;
+}
+.nav-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.contact-btn{
+    align-content: center;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    background-color: #5252E4;
+    text-decoration: none;
+    border-radius: 20px;
+    color: #fff;
+    font-family: 'NotoKufiArabic-bold';
+}
+.menu-btn{
+    display: none;
+    cursor: pointer;
+}
+.nav-menu-iphone{
+    position: absolute;
+    top: 100%;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+    z-index: 1;
+    width: 80%;
+    height: min-content;
+    padding: 50px 20px;
+    background-color: #5252E4;
+    gap: 20px;
+    border-radius: 20px;
+    color: #fff;
+    font-family: 'NotoKufiArabic-bold';
+}
+@media screen and (max-width: 1000px) {
+    .nav{
+        justify-content: center;
+        gap: 60%;
+    }
+    .nav-menu{
+        display: none ;
+    }
+    .menu-btn{
+        display: block;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .contact-btn{display: none;}
+    .nav{
+ 
+        gap: 60%;
+    }
+  }
+
+
+/* Hero Start */
+
+.hero{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+}
+.hero-slogen{
+    border: 1px rgb(190, 190, 190) solid;
+    font-family: 'NotoKufiArabic-Regular';
+    padding: 2px 10px;
+    border-radius: 40px;
+}
+.hero-title{
+    text-align: center;
+    width: 80%;
+    font-size: 41px;
+    font-family: 'NotoKufiArabic-Bold';
+    line-height: 120%;
+}
+.hero-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.hero-btns a{
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 20px;
+    font-family: 'NotoKufiArabic-Bold';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.hero-cover{
+    justify-self: flex-end;
+}
+@media screen and (max-width: 600px) {
+    .hero-cover{
+        width: 600px;
+        height: 400px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .hero{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .hero-slogen{
+        font-family: 'NotoKufiArabic-Light';
+    }
+    .hero-title{
+        font-size: 28px;
+        font-family: 'NotoKufiArabic-Bold';
+        line-height: 140%;
+    }
+    .hero-btns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .hero-btns a{
+        padding: 10px;
+        border-radius: 15px;
+        font-family: 'NotoKufiArabic-Regular';
+        gap: 5px;
+    }
+
+  }
